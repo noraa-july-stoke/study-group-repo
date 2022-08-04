@@ -1,15 +1,13 @@
 let matrixReverse = function(matrix) {
+    //The following are to be used to turn this into the lucky
     let columns = []
     let maxList = []
     let minList = []
     let max = 0
     let min = 0
-
-    // for (let i = 0; i<matrix.length; i++) {
-    //     for (let j=0; j<matrix[i].length; j++) {
-    //     }
-    // }
-
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//****************************************************************
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     let row = 0
     let rowItem = 0
     while (rowItem < matrix[row].length) {
@@ -21,9 +19,8 @@ let matrixReverse = function(matrix) {
         columns.push(tempCol)
         row = 0
         rowItem++
-        console.log(columns)
     }
-
+    return columns
 }
 
 matrix = [[5, 9, 21],
@@ -37,3 +34,5 @@ matrix = [[5, 10, 8, 6],
 [21, 15, 19, 10]]
 
 console.log(matrixReverse(matrix)); // [10]
+
+//functionality complete
