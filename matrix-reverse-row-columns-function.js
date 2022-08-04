@@ -20,8 +20,10 @@ let matrixReverse = function(matrix) {
         row = 0
         rowItem++
     }
+
     return columns
 }
+
 
 matrix = [[5, 9, 21],
 [9, 19, 6],

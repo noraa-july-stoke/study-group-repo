@@ -40,35 +40,29 @@ let getColMaxes = function (matrix) {
 
 }
 
-// let getLuckies = function (matrix1,matrix2) {
-//     let rowMins = getRowMins(matrix)
-//     let colMaxes = getColMaxes(matrixReverse(matrix))
-//     for (let i=0; i<)
-// }
+let getLucky = function (matrix) {
+    let rows = matrix
+    let columns = matrixReverse(matrix)
+    let mins = getRowMins(rows)
+    let maxes = getColMaxes(columns)
+    for (i=0; i<mins.length; i++) {
+        if (maxes.includes(mins[i])) {
+            return mins[i]
+        }
+    }
+    return `This matrix has no lucky number :(`
+}
 
-
-
-
-
-
-
-
-// matrix = [[5, 9, 21],
-//           [9, 19, 6],
-//           [12, 14, 15]]
-
-// console.log(getRowMins(matrix))
-// console.log(getColMaxes(matrixReverse(matrix)))
-
-// console.log(matrixReverse(matrix)); // [12]
+// Test cases
+matrix = [[5, 9, 21],
+          [9, 19, 6],
+          [12, 14, 15]]
+console.log(getLucky(matrix))  // => 12
 
 matrix = [[5, 10, 8, 6],
 [10, 2, 7, 9],
 [21, 15, 19, 10]]
+console.log(getLucky(matrix)) // => 10
 
-console.log(getRowMins(matrix))
-console.log(getColMaxes(matrixReverse(matrix)))
-
-console.log(matrixReverse(matrix)); // [10]
-
-//functionality complete
+matrix = [[5,6,4], [9,7,2], [1,3,8]]
+console.log(getLucky(matrix)) // => `This matrix has no lucky number :(`
