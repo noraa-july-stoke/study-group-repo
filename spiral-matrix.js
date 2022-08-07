@@ -1,7 +1,7 @@
-let matrixReverse = function (matrix) {
-    let columns = []
-    let rowItem = 0
-    let row = 0
+let rotisserieChicken = (matrix) => {
+    let columns = [];
+    let rowItem = 0;
+    let row = 0;
     while (rowItem < matrix[row].length) {
         let tempCol = [];
         while (row < matrix.length) {
@@ -12,42 +12,24 @@ let matrixReverse = function (matrix) {
         row = 0;
         rowItem++;
     }
-    return columns
+    return columns.reverse();
+
 }
 
+let spiralOrder = (matrix) => {
+    let spiralNums = [];
+    while (true) {
+        spiralNums.push(matrix.shift());
+        if (matrix[0] === undefined) return spiralNums.flat();
+        matrix = rotisserieChicken(matrix);
+    }
+}
 
-
+let spiralNums = []
 let matrix1 = [[1,2,3], [4,5,6],[7,8,9]]
-matrix2 = matrixReverse(matrix1).reverse();
-console.log(matrix2)
-console.log(matrixReverse(matrix2).reverse());
+console.log(spiralOrder(matrix1))
 
-
-
-
-// matrix1 = matrixReverse(matrix1)
-// console.log(matrix1)
-// matrix2 = matrixReverse(matrix1)
-
-// console.log(matrix2)
-
-
-
-
-
-
-
-
-
-// matrix = [[1, 2, 3],
-// [4, 5, 6],
-// [7, 8, 9]]
-
-// console.log(spiralOrder(matrix)); // [1,2,3,6,9,8,7,4,5]
-
-// matrix = [[1, 2, 3, 4],
-// [5, 6, 7, 8],
-// [9, 10, 11, 12]]
-
-
-// console.log(spiralOrder(matrix)); // [1,2,3,4,8,12,11,10,9,5,6,7]
+matrix2 = [[1,2,3,4],
+[5,6,7,8],
+[9,10,11,12]]
+console.log(spiralOrder(matrix2))
