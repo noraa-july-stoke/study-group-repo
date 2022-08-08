@@ -6,6 +6,21 @@ subarrays of length 2 that contain elements at corresponding
 indices from the input arrays.You may assume that the input
 arrays have the same length.*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //************************NORAA'S SOLVE**************************************
 //***************************************************************************
 
