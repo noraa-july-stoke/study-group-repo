@@ -1,4 +1,4 @@
-let rotisserieChicken = (matrix) => {
+let turnRotisserie = (matrix) => {
     let columns = [];
     let rowItem = 0;
     let row = 0;
@@ -18,11 +18,12 @@ let rotisserieChicken = (matrix) => {
 
 let spiralOrder = (matrix) => {
     let spiralNums = [];
-    while (true) {
+    while (matrix.length > 1) {   // or matrix.length > 1???
         spiralNums.push(matrix.shift());
-        if (matrix[0] === undefined) return spiralNums.flat();
-        matrix = rotisserieChicken(matrix);
+        matrix = turnRotisserie(matrix);
     }
+    spiralNums.push(matrix.shift());
+    return spiralNums.flat();
 }
 
 let spiralNums = []
