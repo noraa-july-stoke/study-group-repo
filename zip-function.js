@@ -1,5 +1,6 @@
 //****************PROMPT******PROMPT*******************PROMPT****************
 //********PROMPT***********PROMPT*********PROMPT*****************************
+//****************PROMPT******PROMPT*******************PROMPT****************
 /*Write a function zip that accepts two arrays as arguments.
 The function should return a two dimensional array with
 subarrays of length 2 that contain elements at corresponding
