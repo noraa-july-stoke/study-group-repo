@@ -15,23 +15,36 @@ multiple is less than nMax, too
 
 
 
-let numericalOrder = (arr) => {
-    for (let i = 0; i < arr.length; i++) {
-        if (Number(arr[i]) < Number(arr[i - 1])) {
-            [arr[i - 1], arr[i]] = [arr[i], arr[i - 1]];
-            i = 0
-        }
-    }
-    return arr
-}
 
-const search_permMult = (nMax, k) => {
-    let stopNum = nMax / k;
-    let count = 0;
-    for (let i = 1035; i < stopNum; i++) {
-        let numString = numericalOrder(`${i}`.split(''));
-        let permCheckStr = numericalOrder(`${i * k}`.split(''))
-        if (numString.join('') === permCheckStr.join('')) count++;
-    }
-    return count
-}
+
+
+
+
+
+
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//****************SPOILER ALERT!!! SOLVE BELOW*********************************
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// let numericalOrder = (arr) => {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (Number(arr[i]) < Number(arr[i - 1])) {
+//             [arr[i - 1], arr[i]] = [arr[i], arr[i - 1]];
+//             i = 0
+//         }
+//     }
+//     return arr
+// }
+
+// const search_permMult = (nMax, k) => {
+//     let stopNum = nMax / k;
+//     let count = 0;
+//     for (let i = 1035; i < stopNum; i++) {
+//         let numString = numericalOrder(`${i}`.split(''));
+//         let permCheckStr = numericalOrder(`${i * k}`.split(''))
+//         if (numString.join('') === permCheckStr.join('')) count++;
+//     }
+//     return count
+// }
