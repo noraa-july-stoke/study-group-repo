@@ -10,8 +10,14 @@
 */
 
 function sort(nums) {
-    // Your code here
+    if (nums.length<2) return nums;
+    let piv = nums.shift()
+    const less = nums.filter(num => num<piv);
+    const more = nums.filter(num => num>=piv);
+    return (sort(less)).concat(piv, (sort(more)))
 }
+
+//console.log(sort([14, 5, 10, 6, 3, 4]));
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
