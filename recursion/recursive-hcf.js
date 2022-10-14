@@ -5,4 +5,5 @@ const hcf = (num1,num2) => {
     return hcf(lowest,highest%lowest)
 
 }
-console.log(hcf(27,12))
+
+console.log(hcf(100,52))
