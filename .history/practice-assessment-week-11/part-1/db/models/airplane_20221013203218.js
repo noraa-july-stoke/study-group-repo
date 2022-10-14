@@ -157,11 +157,9 @@ maxNumPassengers:{
     allowNull: true,
     validate: {
       min: 0,
-      max: 853,
+      max: 853
       checkMax(value) {
-        if (value > this.maxNumPassengers) {
-          throw new Error()
-        }
+        
       }
     },
   },

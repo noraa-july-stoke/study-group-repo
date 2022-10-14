@@ -147,22 +147,17 @@ homeBase: {
 maxNumPassengers:{
   type: DataTypes.INTEGER,
   allowNull: false,
-  validate: {
-    min:2,
-    max: 853
-  }
+  // validate: {
+  //   min:2,
+  //   max: 853
+  // }
 },
   currentNumPassengers: {
     type: DataTypes.INTEGER,
     allowNull: true,
     validate: {
       min: 0,
-      max: 853,
-      checkMax(value) {
-        if (value > this.maxNumPassengers) {
-          throw new Error()
-        }
-      }
+      max: 853
     },
   },
     cruisingAltitudeFt: {

@@ -159,11 +159,11 @@ maxNumPassengers:{
       min: 0,
       max: 853,
       checkMax(value) {
-        if (value > this.maxNumPassengers) {
+        if (value > max) {
           throw new Error()
         }
       }
-    },
+    }, 
   },
     cruisingAltitudeFt: {
       type:DataTypes.INTEGER,

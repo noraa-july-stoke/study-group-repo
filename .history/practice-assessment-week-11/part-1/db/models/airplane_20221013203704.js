@@ -159,7 +159,7 @@ maxNumPassengers:{
       min: 0,
       max: 853,
       checkMax(value) {
-        if (value > this.maxNumPassengers) {
+        if (value > maxNumPassengers.max) {
           throw new Error()
         }
       }

@@ -155,15 +155,10 @@ maxNumPassengers:{
   currentNumPassengers: {
     type: DataTypes.INTEGER,
     allowNull: true,
-    validate: {
-      min: 0,
-      max: 853,
-      checkMax(value) {
-        if (value > this.maxNumPassengers) {
-          throw new Error()
-        }
-      }
-    },
+    // validate: {
+    //   min: 0,
+    //   max: 853
+    // },
   },
     cruisingAltitudeFt: {
       type:DataTypes.INTEGER,
