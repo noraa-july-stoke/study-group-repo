@@ -12,52 +12,52 @@ const validSuperheros = [
   {
     name: 'HOMELANDER',
     alias: 'bigBaby',
-    affiliation: 'Avengers',
+    affiliation: 'The Seven',
     heightCm: 178,
     isMutant: true,
-    race: 'human',
-    universe: 'Marvel',
-    releaseYear: 1985
+    race: 'TrueMerican',
+    universe: 'The Boys',
+    releaseYear: 2019
   },
   {
     name: 'STARLIGHT',
     alias: 'Annie',
-    affiliation: 'Avengers',
+    affiliation: 'The Seven',
     heightCm: 166,
     isMutant: true,
-    race: 'human',
-    universe: 'Marvel',
-    releaseYear: 2020
+    race: 'AmericanSweetheart',
+    universe: 'The Boys',
+    releaseYear: 2019
   },
   {
     name: 'THE DEEP',
     alias: 'forgotHisName',
-    affiliation: 'Avengers',
+    affiliation: 'The Seven',
     heightCm: 170,
     isMutant: true,
-    race: 'human',
-    universe: 'Marvel',
-    releaseYear: 2018
-  },
-  {
-    name: 'A TRAIN',
-    alias: 'cantMemberEither',
-    affiliation: 'Avengers',
-    heightCm: 174,
-    isMutant: true,
-    race: 'human',
-    universe: 'Marvel',
+    race: 'FishMerican',
+    universe: 'The Boys',
     releaseYear: 2019
   },
   {
-    name: 'BUTCHER',
-    alias: 'Billyeee',
-    affiliation: 'Avengers',
+    name: 'A TRAIN',
+    alias: 'cantMemberEitherNarcisssist',
+    affiliation: 'The Seven',
+    heightCm: 174,
+    isMutant: true,
+    race: 'Rebranded',
+    universe: 'The Boys',
+    releaseYear: 2019
+  },
+  {
+    name: 'Butcher',
+    alias: 'Billy',
+    affiliation: 'The Boys',
     heightCm: 180,
     isMutant: false,
-    race: 'human',
-    universe: 'Marvel',
-    releaseYear: 2000
+    race: 'BritishMaybe',
+    universe: 'The Boys',
+    releaseYear: 2019
   }
 ];
 

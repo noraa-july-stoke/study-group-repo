@@ -17,7 +17,7 @@ const validSuperheros = [
     isMutant: true,
     race: 'human',
     universe: 'Marvel',
-    releaseYear: 1985
+    releaseYear: 2019
   },
   {
     name: 'STARLIGHT',
@@ -27,7 +27,7 @@ const validSuperheros = [
     isMutant: true,
     race: 'human',
     universe: 'Marvel',
-    releaseYear: 2020
+    releaseYear: 2019
   },
   {
     name: 'THE DEEP',
@@ -37,7 +37,7 @@ const validSuperheros = [
     isMutant: true,
     race: 'human',
     universe: 'Marvel',
-    releaseYear: 2018
+    releaseYear: 2019
   },
   {
     name: 'A TRAIN',
@@ -51,13 +51,13 @@ const validSuperheros = [
   },
   {
     name: 'BUTCHER',
-    alias: 'Billyeee',
+    alias: 'Billy',
     affiliation: 'Avengers',
     heightCm: 180,
     isMutant: false,
     race: 'human',
     universe: 'Marvel',
-    releaseYear: 2000
+    releaseYear: 2019
   }
 ];
 

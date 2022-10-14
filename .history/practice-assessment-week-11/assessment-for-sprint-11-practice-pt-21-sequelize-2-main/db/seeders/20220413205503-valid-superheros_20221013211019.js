@@ -12,37 +12,37 @@ const validSuperheros = [
   {
     name: 'HOMELANDER',
     alias: 'bigBaby',
-    affiliation: 'Avengers',
+    affiliation: 'The Seven',
     heightCm: 178,
     isMutant: true,
     race: 'human',
     universe: 'Marvel',
-    releaseYear: 1985
+    releaseYear: 2019
   },
   {
     name: 'STARLIGHT',
     alias: 'Annie',
-    affiliation: 'Avengers',
+    affiliation: 'The Seven',
     heightCm: 166,
     isMutant: true,
     race: 'human',
     universe: 'Marvel',
-    releaseYear: 2020
+    releaseYear: 2019
   },
   {
     name: 'THE DEEP',
     alias: 'forgotHisName',
-    affiliation: 'Avengers',
+    affiliation: 'The Seven',
     heightCm: 170,
     isMutant: true,
     race: 'human',
     universe: 'Marvel',
-    releaseYear: 2018
+    releaseYear: 2019
   },
   {
     name: 'A TRAIN',
-    alias: 'cantMemberEither',
-    affiliation: 'Avengers',
+    alias: 'cantMemberEitherNarcisssist',
+    affiliation: 'The Seven',
     heightCm: 174,
     isMutant: true,
     race: 'human',
@@ -51,13 +51,13 @@ const validSuperheros = [
   },
   {
     name: 'BUTCHER',
-    alias: 'Billyeee',
-    affiliation: 'Avengers',
+    alias: 'Billy',
+    affiliation: 'The Boys',
     heightCm: 180,
     isMutant: false,
     race: 'human',
     universe: 'Marvel',
-    releaseYear: 2000
+    releaseYear: 2019
   }
 ];
 

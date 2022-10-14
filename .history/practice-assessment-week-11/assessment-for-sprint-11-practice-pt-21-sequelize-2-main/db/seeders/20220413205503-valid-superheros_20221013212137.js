@@ -27,7 +27,7 @@ const validSuperheros = [
     isMutant: true,
     race: 'human',
     universe: 'Marvel',
-    releaseYear: 2020
+    releaseYear: 2019
   },
   {
     name: 'THE DEEP',
@@ -37,7 +37,7 @@ const validSuperheros = [
     isMutant: true,
     race: 'human',
     universe: 'Marvel',
-    releaseYear: 2018
+    releaseYear: 2019
   },
   {
     name: 'A TRAIN',
@@ -57,7 +57,7 @@ const validSuperheros = [
     isMutant: false,
     race: 'human',
     universe: 'Marvel',
-    releaseYear: 2000
+    releaseYear: 2019
   }
 ];
 
