@@ -50,15 +50,14 @@ app.put('/items/:id', async (req, res, next) => {
   const { id } = req.params;
   const { name, price, quantity, isUsed } = req.body;
 
-  let item = await WarehouseItem.findByPk(id);
+  let item = await WarehouseItem.findByPk(req.params.id);
 
 
   if (item) {
 
     if (name !== undefined) item.name = name;
     if (price !== undefined) item.price = price;
-    //can be done either way, one more explicit but below works
-    if (quantity) item.quantity = quantity;
+    if (quantity !== undefined) item.quantity = quantity;
     if (isUsed !== undefined) item.isUsed = isUsed;
 
     item.save()
@@ -79,21 +78,14 @@ app.put('/items/:id', async (req, res, next) => {
 
 
 app.delete('/items/:id', async (req, res, next) => {
-  const { id } = req.params;
-  let item = await WarehouseItem.findByPk(id);
+  const 
+  let item = await WarehouseItem.findByPk(req.params.id);
 
-  if (item) {
-    await item.destroy();
-    res.json({
-      message: 'Successfully deleted'
-    })
-  } else {
-    res.status('404')
-    res.json({ message: 'Warehouse Item not found' })
+  });
 
-  }
-});
-
+  res.status('200')
+  res.json(items)
+})
 
 
 if (require.main === module) {

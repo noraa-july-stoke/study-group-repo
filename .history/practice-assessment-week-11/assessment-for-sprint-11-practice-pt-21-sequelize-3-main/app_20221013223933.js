@@ -92,8 +92,12 @@ app.delete('/items/:id', async (req, res, next) => {
     res.json({ message: 'Warehouse Item not found' })
 
   }
+
 });
 
+//   res.status('200')
+//   res.json(items)
+// }
 
 
 if (require.main === module) {

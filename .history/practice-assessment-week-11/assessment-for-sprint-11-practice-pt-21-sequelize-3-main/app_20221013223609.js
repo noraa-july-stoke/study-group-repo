@@ -83,17 +83,14 @@ app.delete('/items/:id', async (req, res, next) => {
   let item = await WarehouseItem.findByPk(id);
 
   if (item) {
-    await item.destroy();
-    res.json({
-      message: 'Successfully deleted'
-    })
-  } else {
-    res.status('404')
-    res.json({ message: 'Warehouse Item not found' })
-
+    item.destroy()
   }
-});
 
+  });
+
+//   res.status('200')
+//   res.json(items)
+// }
 
 
 if (require.main === module) {

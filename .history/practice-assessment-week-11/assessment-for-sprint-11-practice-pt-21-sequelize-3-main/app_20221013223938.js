@@ -94,6 +94,9 @@ app.delete('/items/:id', async (req, res, next) => {
   }
 });
 
+//   res.status('200')
+//   res.json(items)
+// }
 
 
 if (require.main === module) {
