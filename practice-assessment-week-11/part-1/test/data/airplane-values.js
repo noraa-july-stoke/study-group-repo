@@ -4,8 +4,8 @@ const INVALID = 'invalidValues';
 module.exports = {
   flightNumber: {
     [VALID]: [
-      'UA1', 
-      'BA98', 
+      'UA1',
+      'BA98',
       'BA170',
       'DL8869',
     ],
