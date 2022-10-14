@@ -1,0 +1,73 @@
+***SEQUELIZE NOTES***
+
+
+MIGRATION - JS file in Sequelize that defines a specific change to database schema. Creations of new database tables or updating existing values are migrations.
+
+SEED DATA - inital sample or test data set
+
+***Model names should be capitalized, and singular (not plural)
+
+***SQL SELECT statements are executed via finder methods
+
+
+*** Command to generate model file for schema setup:
+
+npx sequelize model:generate --name Tree --attributes tree:string,location:string,heightFt:float,groundCircumferenceFt:float
+
+*** Command for undoing migration:
+npx sequelize db:migrate:undo:all        
+
+
+***CLI to create tables after setting up the up/down migrations
+npx dotenv sequelize db:migrate 
+
+
+***Add new migration
+npx sequelize migration:generate --name add-bandId-to-musicians
+
+
+TODO:
+
+Lazy/eager loading
+Foreign key migrations
+
+
+
+
+npx dotenv sequelize db:migrate
+
+
+
+
+WEDNESDAY LONG PRACTICE TERMINAL COMMANDS IN ORDER
+
+npm install
+
+npx dotenv sequelize-cli db:migrate
+
+
+npx dotenv sequelize-cli db:seed:all
+
+
+
+
+PA CONSOLE-COMMANDS IN CHRONOLOGICAL ORDER:
+
+
+npm install
+
+
+npm test
+
+
+
+
+npx sequelize model:generate --name Airplane --attributes flightNumber:integer,model:string,inService:boolean,homeBase:string,maxNumPassengers:integer,currentNumPassengers:integer,cruisingAltitudeFt:integer,firstFlightDate:string
+
+
+
+
+MODEL: DataTypes
+MIGRATION: Sequelize
+
+
